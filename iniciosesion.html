@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Iniciar Sesión - El Taller de la Viruta</title>
+    <link rel="stylesheet" href="iniciosesion.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <!-- Panel izquierdo - Información -->
+        <div class="info-panel">
+            <div class="logo">
+                <h1>El Taller de la Viruta</h1>
+                <p>Artesanía en madera de calidad</p>
+            </div>
+
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Productos Artesanales</h3>
+                        <p>Muebles únicos hechos a mano</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Envío Seguro</h3>
+                        <p>Entrega garantizada en perfecto estado</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Calidad Premium</h3>
+                        <p>Materiales seleccionados y acabados perfectos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel derecho - Formulario -->
+        <div class="form-panel">
+            <div class="form-header">
+                <h2>Iniciar Sesión</h2>
+                <p>Accede a tu cuenta para continuar</p>
+            </div>
+
+            <!-- Mensajes -->
+            <div id="error-message" class="message error-message">
+                <i class="fas fa-exclamation-circle"></i> <span id="error-text"></span>
+            </div>
+
+            <div id="success-message" class="message success-message">
+                <i class="fas fa-check-circle"></i> <span id="success-text"></span>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Recordar sesión</label>
+                    </div>
+                    <a href="recuperar-contrasena.html" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </button>
+            </form>
+            <div class="register-link">
+                ¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

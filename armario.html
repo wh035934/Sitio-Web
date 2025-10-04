@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Armario - El Taller de la Viruta</title>
+    <link rel="stylesheet" href="silla.html">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="img/Logo.png" width="40" alt="Logo de la Pagina Web">
+                <h1>El Taller de la Viruta</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="inicio.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="cuenta.html">Cuenta</a></li>
+                    <li class="cart-icon">
+                        <a href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cart-count"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    </div>
+
+    <main>
+        <div class="product-detail">
+            <div class="product-gallery">
+                <img id="main-image" src="armario.html" alt="" class="main-image">
+
+                <div class="thumbnail-container">
+                    <img src="img/Armario 1.png" alt="Vista lateral" class="thumbnail"
+                        onclick="changeImage(this, 'http://127.0.0.1:5500/img/Armario%201.png')">
+                    <img src="img/Armario 2.png" alt="Vista superior" class="thumbnail"
+                        onclick="changeImage(this, 'http://127.0.0.1:5500/img/Armario%202.png')">
+                    <img src="img/Armario 3.png" alt="Detalle de madera" class="thumbnail"
+                        onclick="changeImage(this, 'http://127.0.0.1:5500/img/Armario%203.png')">
+                    <img src="img/Armario 4.png" alt="Detalle de patas" class="thumbnail"
+                        onclick="changeImage(this, 'http://127.0.0.1:5500/img/Armario%204.png')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Armario Personal</h1>
+
+                <p class="price">Mx $1,000.00</p>
+
+                <div class="product-actions">
+                    <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                    <button class="buy-now-btn">Comprar Ahora</button>
+                </div>
+
+                <div class="description">
+                    <p>Este exquisito armario de teca maciza representa la perfecta unión entre funcionalidad y arte en
+                        mobiliario. Fabricado con madera de teca de primera calidad, presenta un acabado satinado que
+                        realza su cálido tono dorado y sus vetas naturales únicas. Con puertas corredizas suaves y un
+                        espacioso interior organizado, ofrece amplio almacenamiento mientras añade un toque de elegancia
+                        natural a cualquier espacio.</p>
+                    <p>Una pieza atemporal que combina la calidez de la madera noble con la practicidad moderna.</p>
+                </div>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Material:</span>
+                        <span class="meta-value">Madera maciza de primera calidad</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Dimensiones:</span>
+                        <span class="meta-value">100cm x 50cm x 60cm (Largo x Ancho x Alto)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Peso:</span>
+                        <span class="meta-value">69 kg</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Color:</span>
+                        <span class="meta-value">Miel clara</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Disponibilidad:</span>
+                        <span class="meta-value">En stock (3 unidades)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h2>Reseñas de Clientes</h2>
+
+            <div class="review-item">
+                <div class="review-header">
+                    <span class="review-author"></span>
+                    <span class="review-date"></span>
+                </div>
+                <div class="review-content">
+
+                </div>
+            </div>
+
+            <div class="review-item">
+                <div class="review-header">
+                    <span class="review-author"></span>
+                    <span class="review-date"></span>
+                </div>
+                <div class="review-content">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="view-all-reviews">
+                <a href="reseñas.html">Ver todas las reseñas</a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="partfooter">
+                <h4>Dirección</h4>
+                <p>Zona centro, colonia 5 de mayo</p>
+                <p>Ciudad de México, CDMX</p>
+            </div>
+
+            <div class="partfooter">
+                <h4>Contacto</h4>
+                <p>Teléfono: (55) 1234-5678</p>
+                <p>Email: info@eltallerdelaviruta.com</p>
+                <p>Horario: Lunes a Sábado 9:00 - 18:00</p>
+            </div>
+            <div class="partfooter social-media">
+                <h4>Redes Sociales</h4>
+                <a href="#" target="_blank" class="fab fa-facebook"></a>
+                <a href="#" target="_blank" class="fab fa-instagram"></a>
+                <a href="#" target="_blank" class="fab fa-pinterest"></a>
+                <a href="#" target="_blank" class="fab fa-youtube"></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 El Taller de la Viruta. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="productfunci.js"></script>
+</body>
+
+</html>

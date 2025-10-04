@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #8b5a2b 0%, #c19a6b 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+}
+
+.logo {
+    background-color: #5c3317;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.logo i {
+    font-size: 40px;
+    color: #c19a6b;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    padding: 30px;
+}
+
+.formulario h1 {
+    text-align: center;
+    color: #5c3317;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.campo {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f5eb;
+    transition: all 0.3s;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #8b5a2b;
+    box-shadow: 0 0 0 2px rgba(139, 90, 43, 0.2);
+    background-color: white;
+}
+
+.campo label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #888;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.campo input:focus~label,
+.campo input:valid~label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    background-color: white;
+    padding: 0 8px;
+    color: #8b5a2b;
+    font-weight: 500;
+}
+
+.recordar {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.recordar a {
+    color: #8b5a2b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.recordar a:hover {
+    color: #5c3317;
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8b5a2b;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5c3317;
+}
+
+.registrarse {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+}
+
+.registrarse a {
+    color: #8b5a2b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.registrarse a:hover {
+    color: #5c3317;
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .contenedor {
+        width: 90%;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+}

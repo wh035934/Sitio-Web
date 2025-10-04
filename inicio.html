@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Taller de la Viruta </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="icon" type="img/x-icon" href="img/Logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="img/Logo.png" width="40" alt="Logo de la Pagina Web">
+                <h1 title="El taller de la viruta">El Taller de la Viruta</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="inicio.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="cuenta.html">Cuenta</a></li>
+                    <li class="cart-icon">
+                        <a href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cart-count"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h2>Muebles Artesanales de Madera</h2>
+        <p>Descubre nuestra colección de muebles únicos, elaborados a mano con maderas de la más alta calidad y con
+            técnicas tradicionales de carpintería.</p>
+    </div>
+
+    <main>
+        <h2 class="section-title" id="products" title="Productos Disponibles">Productos Disponibles</h2>
+
+        <div class="product-container">
+            <div class="product">
+                <a href="mesa.html">
+                    <img src="img/Mesa 1.png" alt="Mesa de madera" title="Mesa de madera">
+                </a>
+                <h3 title="Mesa de Madera">Mesa De Madera</h3>
+                <p>Mesa de madera hecha a mano de manera laminada. Perfecta para comedores.</p>
+                <p class="price">Precio: Mx $1000.00</p>
+                <div class="product-buttons">
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                    <button class="buy-now-btn">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <a href="estanteria.html">
+                    <img src="img/Estanteria 1.png" alt="Ropero rústico" title="Estanteria">
+                </a>
+                <h3 title="Ropero Rústico">Estanteria de Roble</h3>
+                <p title="Ropero Rústico hecho a mano">Estanteria hecha a mano con detalles artesanales.</p>
+                <p class="price">Precio: Mx $1400.00</p>
+                <div class="product-buttons">
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                    <button class="buy-now-btn">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <a href="silla.html">
+                    <img src="img/silla 1.png" alt="Silla artesanal" title="Silla artesanal">
+                </a>
+                <h3>Silla de Madera</h3>
+                <p>Silla de madera hecha a mano de manera maciza. Diseño ergonómico y resistente.</p>
+                <p class="price">Precio: Mx $1300.00</p>
+                <div class="product-buttons">
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                    <button class="buy-now-btn">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <a href="armario.html">
+                    <img src="img/Armario 1.png" alt="Estantería" title="Estantería artesanal">
+                </a>
+                <h3>Armario </h3>
+                <p>Armario hecha a mano perfecta para prendas de vestir</p>
+                <p class="price">Precio: Mx $1500.00</p>
+                <div class="product-buttons">
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                    <button class="buy-now-btn">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <a href="escritorio.html">
+                    <img src="img/Escritorio 1.png" alt="Armario mediano" title="Armario mediano">
+                </a>
+                <h3>Escritorio</h3>
+                <p>Escritorio comodo con espacio de almacenamiento.</p>
+                <p class="price">Precio: Mx $1800.00</p>
+                <div class="product-buttons">
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                    <button class="buy-now-btn">Comprar Ahora</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <a href="repisa.html">
+                    <img src="img/Repisa 1.png" alt="Repisa" title="Repisa artesanal">
+                </a>
+                <h3>Repisa de Barra</h3>
+                <p>Repisa hecha a mano, perfecta para herramientas y elementos decorativos.</p>
+                <p class="price">Precio: Mx $500.00</p>
+                <div class="product-buttons">
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
+                    <button class="buy-now-btn">Comprar Ahora</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-products-link">
+            <a href="https://www.ikea.com/mx/es/cat/storage-organisation-st001/" target="_blank">Ver Más Productos</a>
+        </div>
+
+        <section id="about" style="margin: 3rem 0; padding: 2rem; background-color: #e8e0d5; border-radius: 8px;">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto;">En El Taller de la Viruta, nos dedicamos a
+                la creación de muebles artesanales de alta calidad. Cada pieza es elaborada con esmero, utilizando
+                maderas seleccionadas y técnicas tradicionales que garantizan durabilidad y belleza en cada uno de
+                nuestros productos.</p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="partfooter">
+                <h4>Dirección</h4>
+                <p>Zona centro, colonia 5 de mayo</p>
+                <p>Ciudad de México, CDMX</p>
+            </div>
+
+            <div class="partfooter">
+                <h4>Contacto</h4>
+                <p>Teléfono: (55) 1234-5678</p>
+                <p>Email: info@eltallerdelaviruta.com</p>
+                <p>Horario: Lunes a Sábado 9:00 - 18:00</p>
+            </div>
+            <div class="partfooter social-media">
+                <h4>Redes Sociales</h4>
+                <a href="#" target="_blank" class="fab facebook-btn"> Facebook</a>
+                <a href="#" class="fab fa-twitter"> Twitter</a>
+                <a href="#" target="_blank" class="fab fa-youtube"> YouTube</a>
+                <a class="fab fa-instagram" href="#" target="_blank"> Instagram</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 El Taller de la Viruta. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="inicio.js"></script>
+</body>
+
+</html>
